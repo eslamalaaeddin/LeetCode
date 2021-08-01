@@ -13,10 +13,7 @@ public class DuplicateZeroes {
         duplicateZeros(numbers4);
 
     }
-
-
-
-    static void duplicateZeros(int[] numbers){
+    static void duplicateZeros(int[] numbers) {
         StringBuilder builder = new StringBuilder();
         for (int number : numbers) {
             if (number == 0)
@@ -29,7 +26,7 @@ public class DuplicateZeroes {
         System.out.println(s);
 
         for (int i = 0; i < numbers.length; i++) {
-            numbers[i] = Integer.parseInt(s.substring(i,i+1));
+            numbers[i] = Integer.parseInt(s.substring(i, i + 1));
         }
 
     }
