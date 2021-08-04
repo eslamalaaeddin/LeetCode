@@ -22,6 +22,11 @@ public class RemoveElement {
     }
 
     public static int removeElement(int[] nums, int val) {
+        /*
+            int[] array1 = {3, 2, 2, 3}; --> 2 2 _ _
+            int val1 = 3;
+         */
+        //final sub array size after removing all occurrences of val
         int j = 0;
         for (int num : nums) {
             if (num != val) {
